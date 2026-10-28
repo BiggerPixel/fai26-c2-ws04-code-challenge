@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kassa | Vardagsteknik</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="min-h-screen bg-stone-100 text-stone-950">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="mx-auto max-w-5xl px-5 py-5">
+        <p class="text-sm font-semibold tracking-[0.2em] text-emerald-700">VARDAGSTEKNIK</p>
+        <p class="text-2xl font-bold">Kassa</p>
+      </div>
+    </header>
+
+    <main class="mx-auto grid max-w-5xl gap-6 px-5 py-8 lg:grid-cols-[1fr_320px]">
+      <div class="space-y-8">
+        <section>
+          <h1 class="text-3xl font-bold">Varukorg</h1>
+          <div id="cart-items" class="mt-4 space-y-3">
+            <!-- Exempelkort. Kopieras till script.js i uppgift 3. -->
+            <article class="flex gap-4 rounded-2xl bg-white p-4 shadow-sm">
+              <img class="h-24 w-24 rounded-xl object-cover" src="https://images.unsplash.com/photo-1545127398-14699f92334b?w=600&auto=format&fit=crop&q=60" alt="Trådlösa hörlurar" />
+              <div class="flex-1">
+                <p class="text-sm font-medium text-emerald-700">North Sound</p>
+                <h2 class="text-lg font-bold">Trådlösa hörlurar</h2>
+                <p class="text-sm text-stone-500">2 st à 299 kr</p>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-800">Brusreducering</span>
+                  <span class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-800">30 h batteri</span>
+                </div>
+              </div>
+              <p class="text-xl font-bold">598 kr</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="rounded-2xl bg-white p-5 shadow-sm">
+          <h2 class="text-lg font-bold">Leverans</h2>
+          <p class="mt-2 text-stone-600">Erik Danielsson, Storgatan 8, 582 23 Linköping</p>
+          <p class="mt-2 text-stone-600">
+            I paketet: <span id="package-names" class="font-semibold text-stone-950">Produktnamnen visas här</span>
+          </p>
+        </section>
+      </div>
+
+      <aside class="h-fit rounded-3xl bg-stone-950 p-6 text-white">
+        <p class="text-sm font-semibold uppercase tracking-widest text-emerald-300">Ordersammanfattning</p>
+
+        <ul id="summary-rows" class="mt-6 space-y-3">
+          <!-- Exempelrad. Kopieras till script.js i uppgift 2. -->
+          <li class="flex justify-between gap-4">
+            <span class="text-stone-300">2 × Trådlösa hörlurar</span>
+            <span class="font-semibold">598 kr</span>
+          </li>
+        </ul>
+
+        <div class="mt-6 flex items-end justify-between gap-4 border-t border-stone-700 pt-6">
+          <p class="text-stone-300">Att betala</p>
+          <p id="order-total" class="text-3xl font-bold">1846 kr</p>
+        </div>
+
+        <button class="mt-6 w-full rounded-2xl bg-emerald-600 px-5 py-4 font-bold hover:bg-emerald-500" type="button">
+          Gå vidare till betalning
+        </button>
+      </aside>
+    </main>
+  </body>
+</html>
