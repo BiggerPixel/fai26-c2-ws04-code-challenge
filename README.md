@@ -142,18 +142,7 @@ Låt de två `<span>` med `Brusreducering` och `30 h batteri` vara kvar. Dem fix
 
 **Steg 4.** Visa korten i `#cart-items`. Koden ser ut som i steg 4 i uppgift 2. Ta sedan bort exempelkortet ur `index.html`.
 
-:::spoiler
-
-De sex värdena som ska bytas:
-
-- `Trådlösa hörlurar` i `alt` blir `${item.product.name}`.
-- `North Sound` blir `${item.product.brand}`.
-- `Trådlösa hörlurar` i `<h2>` blir `${item.product.name}`.
-- `2` i `2 st à 299 kr` blir `${item.quantity}`.
-- `299` i `2 st à 299 kr` blir `${item.product.price}`.
-- `598` blir `${lineTotal}`.
-
-:::
+[Du hittar mer hjälp på vägen genom att följa guiden på kurssidan istället](https://course.biggerpixel.com/workshops/ms77bhtgapy5wrc3c8bgraa9ps8fqjva/segments/nd71xnb5kgsc9yhbtwxxt8jnjs8h0s81?placementId=j574n2mv5qw8vgt7dbdj12px6n8h4vhb)
 
 **Klart när:** Tre kort syns, med rätt bild, namn, varumärke, antal och pris. Alla tre korten visar fortfarande `Brusreducering` och `30 h batteri`. Det är rätt just nu.
 
@@ -193,13 +182,7 @@ Det nya här är en `map` inne i en annan `map`. Den yttre går igenom produkter
 
 Testa med `console.log(featureTags)` inne i callbacken. Console ska visa tre arrayer, en per produkt. Den första ska innehålla två `<span>`-strängar.
 
-:::spoiler
-
-Callbacken i den inre `map` får en egenskap i taget, till exempel `"Brusreducering"`. Den är en sträng, så vi skriver `${feature}` i `<span>`, inte `${feature.name}`.
-
-Glöm inte `join("")` när `featureTags` läggs in i kortet.
-
-:::
+[Du hittar mer hjälp på vägen genom att följa guiden på kurssidan istället](https://course.biggerpixel.com/workshops/ms77bhtgapy5wrc3c8bgraa9ps8fqjva/segments/nd71xnb5kgsc9yhbtwxxt8jnjs8h0s81?placementId=j574n2mv5qw8vgt7dbdj12px6n8h4vhb)
 
 **Klart när:**
 
